@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEATHER</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="card">
-        <div class="search">
-            <input type="text" placeholder="Enter City Name" spellcheck="false">
-            <button><img src="images/search.png" alt="search"></button>
-        </div>
-        <div class="error">
-             <p>Ivalid City Name</p>
-        </div>
-        <div class="weather">
-            <img src="https://i.pinimg.com/236x/42/30/39/4230394c441d1f6a4137c7a434580ad4.jpg" alt="" class="weather icon">
-            <h1 class="temp">19°C</h1>
-            <h2 class="city">Meru</h2>
-            <div class="details">
-                <div class="col">
-                    <img src="https://i.pinimg.com/236x/d1/da/0c/d1da0ca0ceb9057e0c7e720079190e19.jpg" alt="">
-                    <div>
-                        <p class="humidity">50%</p>
-                        <p>Humidity</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <img src="https://i.pinimg.com/236x/fd/9d/0c/fd9d0c93305469fa35a5795ca20ab067.jpg" alt="">
-                    <div>
-                        <p class="wind">20 km/h</p>
-                        <p>Wind speed</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script>
+
         const apiKey = "030c1200e4bac6f69d26fdc220092ba2";
         const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
         
@@ -84,14 +44,6 @@
         searchBtn.addEventListener("click", () => {
             checkWeather(searchBox.value);
         })
-
-
-
-    </script>
-</body>
-</html>
-
-
 
 
 
