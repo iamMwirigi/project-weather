@@ -6,7 +6,7 @@
 
 body {
    font-family: Arial, sans-serif;
-   background-color: #8fe0ff;
+   background-color: #30c4ff89;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -14,7 +14,7 @@ body {
 }
 
 .card {
-   background-color:  	#75b4e3;
+   background-color: #75b4e3;
    border-radius: 10px;
    width: 100%;
    max-width: 400px;
@@ -23,27 +23,46 @@ body {
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Container for search input and button */
 .search {
    display: flex;
-   justify-content: center;
    align-items: center;
-   margin-bottom: 20px;
+   gap: 15px; /* Adjust the gap between the input and the button */
+   justify-content: center;
 }
 
+/* Search bar style */
 .search input {
-   width: 80%;
    padding: 10px;
-   font-size: 16px;
-   border: 1px solid #d1cfcf00;
-   border-radius: 5px;
+   width: 250px;  /* Adjust the width of the search bar */
+   border-radius: 8px;
+   border: 1px solid #dddddd00;
 }
 
 .search button {
-   background-color: #c3e4f3;
+   padding: 10px 20px;  /* Padding for top/bottom and left/right */
+   background-color: #ff9b83;
    border: none;
-   padding: 10px;
+   border-radius: 8px;
    cursor: pointer;
-   border-radius: 5px;
+   display: flex;
+   justify-content: center;  /* Center text horizontally */
+   align-items: center;      /* Center text vertically */
+   width: 120px;             /* Adjust the button width */
+   height: 40px;             /* Set the button height */
+   transition: background-color 0.3s ease;
+   font-size: 16px;          /* Font size for the text */
+   font-weight: bold;        /* Make the text bold */
+   color: white;             /* Text color */
+   text-transform: uppercase; /* Uppercase text */
+   letter-spacing: 1px;      /* Spacing between letters */
+}
+
+
+/* Ensure the word 'Search' is centered */
+.search button span {
+   display: inline-block;
+   text-align: center;
 }
 
 .search button img {
